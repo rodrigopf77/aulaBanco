@@ -26,4 +26,19 @@ public class TesteConta {
         
     }
     
+    @Test
+    public void testaDeposito(){
+        //Cenario
+        Cliente cliente = new Cliente();
+        cliente.setNome("Calebe");
+        
+        ContaPrime cPrime = new ContaPrime(123, 321);
+        
+        //Ação
+        cPrime.deposito(100);
+        
+        //Valida
+        Assert.assertEquals(cPrime.getSaldo(), 100, 1);
+    }
+    
 }
