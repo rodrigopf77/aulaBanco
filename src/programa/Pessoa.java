@@ -1,6 +1,5 @@
 package programa;
 
-import java.util.Date;
 import java.util.Scanner;
 
 public abstract class Pessoa {
@@ -8,7 +7,6 @@ public abstract class Pessoa {
     private String nome;
     private String email;
     private String cpf;
-    private Date dataNascimento;
     
     Scanner sc = new Scanner(System.in);
     
