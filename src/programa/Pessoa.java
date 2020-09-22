@@ -16,6 +16,12 @@ public abstract class Pessoa {
     DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
     
     Scanner sc = new Scanner(System.in);
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+    
+    
     
     public void criarPessoa(){
         System.out.println("Nome: ");

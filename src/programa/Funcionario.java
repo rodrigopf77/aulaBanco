@@ -6,6 +6,12 @@ public class Funcionario extends Pessoa{
     private double totalVendas;
     private double comissao;
 
+    public Funcionario(String nome) {
+        super(nome);
+    }
+
+    
+    
     @Override
     public void criarPessoa(){
         super.criarPessoa();

@@ -7,6 +7,10 @@ package programa;
 public class ContaPoupanca extends Conta{
     
     private double rendimentos;
+
+    public ContaPoupanca(int agencia, int numeroConta, Cliente titular) {
+        super(agencia, numeroConta, titular);
+    }
     
     @Override
     public void criarConta(Cliente titular){
@@ -14,8 +18,9 @@ public class ContaPoupanca extends Conta{
         
     }
     
-    public void calculaRendimentos(Conta conta, double rendimento){
-        this.setSaldo(this.getSaldo() * rendimento);
+    public void calculaRendimentos(double rendimento){
+        this.setSaldo(this.getSaldo() + (this.getSaldo() * rendimento));
+        this.setSaldo(this.getSaldo() - (this.getSaldo() * 0.2));
     }
 
     @Override

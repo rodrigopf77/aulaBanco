@@ -8,10 +8,18 @@ public abstract class Conta implements ServicoBancario{
     private int agencia;
     private int numeroConta;
     private double saldo;
+    private Cliente titular;
     
     private ArrayList<Cliente> clientes = new ArrayList<>();
     
     Scanner sc = new Scanner(System.in);
+
+    public Conta(int agencia, int numeroConta, Cliente titular) {
+        this.agencia = agencia;
+        this.numeroConta = numeroConta;
+        this.titular = titular;
+        this.saldo = 0;
+    }
     
     public void addCliente(Cliente cliente){
         this.clientes.add(cliente);
@@ -63,6 +71,14 @@ public abstract class Conta implements ServicoBancario{
 
     public void setClientes(ArrayList<Cliente> clientes) {
         this.clientes = clientes;
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
     }
     
     

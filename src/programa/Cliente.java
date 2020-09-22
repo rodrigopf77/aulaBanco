@@ -2,6 +2,12 @@ package programa;
 
 public class Cliente extends Pessoa{
     private double renda;
+
+    public Cliente(String nome) {
+        super(nome);
+    }
+    
+    
     
     @Override
     public void criarPessoa(){

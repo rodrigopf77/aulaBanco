@@ -3,13 +3,13 @@ package programa;
 public class ContaPrime extends Conta{
     private double limite;
 
-    public ContaPrime(int agencia, int numeroConta) {
-        this.setAgencia(agencia);
-        this.setNumeroConta(numeroConta);
-        
+    public ContaPrime(int agencia, int numeroConta, Cliente titular) {
+        super(agencia, numeroConta, titular);
     }
     
     
+
+
     
     @Override
     public void mostrarConta(){

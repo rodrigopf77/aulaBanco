@@ -8,7 +8,7 @@ public class Programa {
         
         Scanner sc = new Scanner(System.in);
         
-        Cliente cliente = new Cliente();
+        Cliente cliente = new Cliente("Carolina");
         cliente.criarPessoa();
         cliente.mostrarPessoa();
         

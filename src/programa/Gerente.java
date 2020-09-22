@@ -3,6 +3,12 @@ package programa;
 public class Gerente extends Funcionario{
     
     private double bonus;
+
+    public Gerente(String nome) {
+        super(nome);
+    }
+    
+    
     
     public void calculaSalario(){
         if (this.getSalario() >= 15000) {
