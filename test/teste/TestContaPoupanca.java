@@ -18,7 +18,7 @@ public class TestContaPoupanca {
         cPoupanca.calculaRendimentos(0.4);
         
         //Validação
-        Assert.assertEquals(202, cPoupanca.getSaldo(), 1);
+        Assert.assertEquals(200, cPoupanca.getSaldo(), 1);
     }
     
     // TESTE DE REGRESSÃO MUDANÇA DE REGRAS DE NEGÓCIO
