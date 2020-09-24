@@ -2,7 +2,7 @@ package teste;
 
 import org.junit.Assert;
 import org.junit.Test;
-import programa.Cliente;
+import br.com.premiumtechnology.model.Cliente;
 
 public class TestCliente {
     

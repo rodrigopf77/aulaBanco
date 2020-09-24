@@ -1,4 +1,4 @@
-package programa;
+package br.com.premiumtechnology.model;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -20,6 +20,9 @@ public abstract class Pessoa {
     public Pessoa(String nome) {
         this.nome = nome;
     }
+
+    public Pessoa() {
+    }
     
     
     
@@ -39,7 +42,8 @@ public abstract class Pessoa {
         try{
             this.dataNascimento = df.parse(this.dNascimento);
         }catch(ParseException e){
-            System.out.println("Data inválida! " + e.getMessage());
+            System.out.print("Data inválida! " + e.getMessage());
+            this.criarPessoa();
         }
         
     }

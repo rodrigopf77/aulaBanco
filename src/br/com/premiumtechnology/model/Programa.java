@@ -1,4 +1,4 @@
-package programa;
+package br.com.premiumtechnology.model;
 
 import java.util.Scanner;
 
@@ -8,9 +8,9 @@ public class Programa {
         
         Scanner sc = new Scanner(System.in);
         
-        Cliente cliente = new Cliente("Carolina");
+        Cliente cliente = new Cliente();
         cliente.criarPessoa();
-        cliente.mostrarPessoa();
+//        cliente.mostrarPessoa();
         
 
     }

@@ -1,4 +1,4 @@
-package programa;
+package br.com.premiumtechnology.model;
 
 public class ContaPrime extends Conta{
     private double limite;

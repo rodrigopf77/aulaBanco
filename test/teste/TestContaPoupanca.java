@@ -2,8 +2,8 @@ package teste;
 
 import org.junit.Assert;
 import org.junit.Test;
-import programa.Cliente;
-import programa.ContaPoupanca;
+import br.com.premiumtechnology.model.Cliente;
+import br.com.premiumtechnology.model.ContaPoupanca;
 
 public class TestContaPoupanca {
     

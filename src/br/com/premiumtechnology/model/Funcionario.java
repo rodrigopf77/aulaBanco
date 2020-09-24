@@ -1,4 +1,4 @@
-package programa;
+package br.com.premiumtechnology.model;
 
 public class Funcionario extends Pessoa{
     

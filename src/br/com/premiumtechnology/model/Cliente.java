@@ -1,4 +1,7 @@
-package programa;
+package br.com.premiumtechnology.model;
+
+import java.util.Date;
+import br.com.premiumtechnology.DAO.ClienteDAO;
 
 public class Cliente extends Pessoa{
     private double renda;
@@ -7,7 +10,9 @@ public class Cliente extends Pessoa{
         super(nome);
     }
     
-    
+    public Cliente() {
+        
+    }
     
     @Override
     public void criarPessoa(){
@@ -15,6 +20,9 @@ public class Cliente extends Pessoa{
         
         System.out.println("Renda: ");
         this.renda = sc.nextDouble();
+        
+        ClienteDAO cDAO = new ClienteDAO();
+        cDAO.insert(this);
         
     }
     

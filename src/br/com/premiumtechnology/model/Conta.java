@@ -1,4 +1,4 @@
-package programa;
+package br.com.premiumtechnology.model;
 
 import java.util.ArrayList;
 import java.util.Scanner;
