@@ -86,7 +86,13 @@ public abstract class Pessoa {
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-    
-    
+
+    public String getdNascimento() {
+        return dNascimento;
+    }
+
+    public void setdNascimento(String dNascimento) {
+        this.dNascimento = dNascimento;
+    }
     
 }

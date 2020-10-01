@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class ClienteDAO {
 
     Scanner sc = new Scanner(System.in);
+    
 
     public void insert(Cliente cliente) {
 
@@ -27,7 +28,7 @@ public class ClienteDAO {
             insertBD.setString(1, cliente.getNome());
             insertBD.setString(2, cliente.getEmail());
             insertBD.setString(3, cliente.getCpf());
-            insertBD.setString(4, cliente.getDataNascimento().toString());
+            insertBD.setDate(4, (Date) cliente.getDataNascimento());
 
             insertBD.executeUpdate();
             System.out.println("Pessoa inserida com sucesso!");
